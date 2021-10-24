@@ -1,0 +1,86 @@
+18:40:49 **** Rebuild of configuration Debug for project Clase 9 - Proyecto Estructuras 2 Orquesta ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Lucas\\Desktop\\Entorno Eclipse\\eclipse-workspace\\Funciones" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 9 - Proyecto Estructuras 2 Orquesta.o" "..\\src\\Clase 9 - Proyecto Estructuras 2 Orquesta.c" 
+In file included from ..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:13:0:
+C:\Users\Lucas\Desktop\Entorno Eclipse\eclipse-workspace\Funciones/Genericas.h:23:25: error: array type has incomplete element type 'struct estructurasRecibidas'
+ int cargarStruct(struct estructurasRecibidas[],int espacioLibre);
+                         ^~~~~~~~~~~~~~~~~~~~
+C:\Users\Lucas\Desktop\Entorno Eclipse\eclipse-workspace\Funciones/Genericas.h:23:25: warning: 'struct estructurasRecibidas' declared inside parameter list will not be visible outside of this definition or declaration
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c: In function 'main':
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:75:36: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  eTipoOrquesta tipoOrquesta[3]={{1,"Sinfonica",0},{2,"Filarmonica",0},{3,"Camara"},0};
+                                    ^~~~~~~~~~~
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:75:36: note: (near initialization for 'tipoOrquesta[0].tipoOrquesta')
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:75:54: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  eTipoOrquesta tipoOrquesta[3]={{1,"Sinfonica",0},{2,"Filarmonica",0},{3,"Camara"},0};
+                                                      ^~~~~~~~~~~~~
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:75:54: note: (near initialization for 'tipoOrquesta[1].tipoOrquesta')
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:75:74: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  eTipoOrquesta tipoOrquesta[3]={{1,"Sinfonica",0},{2,"Filarmonica",0},{3,"Camara"},0};
+                                                                          ^~~~~~~~
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:75:74: note: (near initialization for 'tipoOrquesta[2].tipoOrquesta')
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:75:2: warning: excess elements in array initializer
+  eTipoOrquesta tipoOrquesta[3]={{1,"Sinfonica",0},{2,"Filarmonica",0},{3,"Camara"},0};
+  ^~~~~~~~~~~~~
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:75:2: note: (near initialization for 'tipoOrquesta')
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:75:32: warning: missing braces around initializer [-Wmissing-braces]
+  eTipoOrquesta tipoOrquesta[3]={{1,"Sinfonica",0},{2,"Filarmonica",0},{3,"Camara"},0};
+                                ^
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:75:32: note: (near initialization for 'tipoOrquesta')
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:93:2: error: expected ';' before 'if'
+  if(levantaEnteros(&opcionMenu,"Ingrese una Opcion", "#Error, ingrese una opcion valida", 1, 9, REINTENTOS)){
+  ^~
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:85:7: warning: unused variable 'asignagcionId' [-Wunused-variable]
+   int asignagcionId=1000;
+       ^~~~~~~~~~~~~
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:84:7: warning: unused variable 'posLibre' [-Wunused-variable]
+   int posLibre;
+       ^~~~~~~~
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:82:7: warning: unused variable 'idInstrumentos' [-Wunused-variable]
+   int idInstrumentos=0;
+       ^~~~~~~~~~~~~~
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:81:7: warning: unused variable 'idMusico' [-Wunused-variable]
+   int idMusico=0;
+       ^~~~~~~~
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:80:7: warning: unused variable 'idOrquesta' [-Wunused-variable]
+   int idOrquesta=0;
+       ^~~~~~~~~~
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:78:19: warning: unused variable 'tipoIntrumentos' [-Wunused-variable]
+  eTipoInstrumento tipoIntrumentos[4]={{1,"Cuerdas",0},{2,"Viento-madera",0},{3,"Viento-metal",0},{4,"Percusion",0}};
+                   ^~~~~~~~~~~~~~~
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:75:16: warning: unused variable 'tipoOrquesta' [-Wunused-variable]
+  eTipoOrquesta tipoOrquesta[3]={{1,"Sinfonica",0},{2,"Filarmonica",0},{3,"Camara"},0};
+                ^~~~~~~~~~~~
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c: In function 'cargarStruct':
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:225:37: error: 'eOrquesta {aka struct <anonymous>}' has no member named 'sexo'
+   estructurasRecibidas[espacioLibre].sexo=auxSexo;
+                                     ^
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:234:37: error: 'eOrquesta {aka struct <anonymous>}' has no member named 'edad'
+   estructurasRecibidas[espacioLibre].edad=auxEdad;
+                                     ^
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:243:37: error: 'eOrquesta {aka struct <anonymous>}' has no member named 'notaUno'
+   estructurasRecibidas[espacioLibre].notaUno=auxNotaUno;
+                                     ^
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:252:37: error: 'eOrquesta {aka struct <anonymous>}' has no member named 'notaDos'
+   estructurasRecibidas[espacioLibre].notaDos=auxNotaDos;
+                                     ^
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:256:3: warning: implicit declaration of function 'strncpy' [-Wimplicit-function-declaration]
+   strncpy(estructurasRecibidas[espacioLibre].apellido,auxApellido,sizeof(estructurasRecibidas[espacioLibre].apellido));
+   ^~~~~~~
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:256:3: warning: incompatible implicit declaration of built-in function 'strncpy'
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:256:3: note: include '<string.h>' or provide a declaration of 'strncpy'
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:256:45: error: 'eOrquesta {aka struct <anonymous>}' has no member named 'apellido'
+   strncpy(estructurasRecibidas[espacioLibre].apellido,auxApellido,sizeof(estructurasRecibidas[espacioLibre].apellido));
+                                             ^
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:256:108: error: 'eOrquesta {aka struct <anonymous>}' has no member named 'apellido'
+   strncpy(estructurasRecibidas[espacioLibre].apellido,auxApellido,sizeof(estructurasRecibidas[espacioLibre].apellido));
+                                                                                                            ^
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:258:3: warning: implicit declaration of function 'PromedioAlumno' [-Wimplicit-function-declaration]
+   PromedioAlumno(estructurasRecibidas,espacioLibre);
+   ^~~~~~~~~~~~~~
+..\src\Clase 9 - Proyecto Estructuras 2 Orquesta.c:259:37: error: 'eOrquesta {aka struct <anonymous>}' has no member named 'estaVacio'
+   estructurasRecibidas[espacioLibre].estaVacio=0;
+                                     ^
+
+18:40:50 Build Failed. 9 errors, 16 warnings. (took 301ms)
+

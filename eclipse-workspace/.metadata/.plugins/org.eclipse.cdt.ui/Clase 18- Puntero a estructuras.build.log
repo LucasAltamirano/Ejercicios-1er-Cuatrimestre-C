@@ -1,0 +1,444 @@
+19:38:09 **** Rebuild of configuration Debug for project Clase 18- Puntero a estructuras ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 18- Puntero a estructuras.o" "..\\src\\Clase 18- Puntero a estructuras.c" 
+In file included from ..\src\Clase 18- Puntero a estructuras.c:15:0:
+c:\mingw\include\stdio.h: In function 'main':
+c:\mingw\include\stdio.h:693:43: error: nested function 'getc' declared 'extern'
+ __CRT_INLINE __cdecl __MINGW_NOTHROW  int getc (FILE * __F)
+                                           ^~~~
+c:\mingw\include\stdio.h:701:43: error: nested function 'putc' declared 'extern'
+ __CRT_INLINE __cdecl __MINGW_NOTHROW  int putc (int __c, FILE * __F)
+                                           ^~~~
+c:\mingw\include\stdio.h:709:43: error: nested function 'getchar' declared 'extern'
+ __CRT_INLINE __cdecl __MINGW_NOTHROW  int getchar (void)
+                                           ^~~~~~~
+c:\mingw\include\stdio.h:717:43: error: nested function 'putchar' declared 'extern'
+ __CRT_INLINE __cdecl __MINGW_NOTHROW  int putchar(int __c)
+                                           ^~~~~~~
+c:\mingw\include\stdio.h:885:34: error: nested function '_get_output_format' declared 'extern'
+ __CRT_ALIAS unsigned int __cdecl _get_output_format (void)
+                                  ^~~~~~~~~~~~~~~~~~
+c:\mingw\include\stdio.h:888:34: error: nested function '_set_output_format' declared 'extern'
+ __CRT_ALIAS unsigned int __cdecl _set_output_format (unsigned int __style)
+                                  ^~~~~~~~~~~~~~~~~~
+c:\mingw\include\stdio.h:910:25: error: nested function '_get_printf_count_output' declared 'extern'
+ __CRT_ALIAS int __cdecl _get_printf_count_output (void)
+                         ^~~~~~~~~~~~~~~~~~~~~~~~
+c:\mingw\include\stdio.h:913:25: error: nested function '_set_printf_count_output' declared 'extern'
+ __CRT_ALIAS int __cdecl _set_printf_count_output (int __mode)
+                         ^~~~~~~~~~~~~~~~~~~~~~~~
+c:\mingw\include\stdio.h:932:33: error: nested function 'fopen64' declared 'extern'
+ FILE * __cdecl __MINGW_NOTHROW  fopen64 (const char * filename, const char * mode)
+                                 ^~~~~~~
+c:\mingw\include\stdio.h:944:35: error: nested function 'ftello64' declared 'extern'
+ __off64_t __cdecl __MINGW_NOTHROW ftello64 (FILE * stream)
+                                   ^~~~~~~~
+In file included from ..\src\Clase 18- Puntero a estructuras.c:16:0:
+c:\mingw\include\stdlib.h:809:30: error: nested function 'mkstemp' declared 'extern'
+ __cdecl __MINGW_NOTHROW  int mkstemp (char *__filename_template)
+                              ^~~~~~~
+c:\mingw\include\stdlib.h:809:30: error: static declaration of 'mkstemp' follows non-static declaration
+c:\mingw\include\stdlib.h:766:30: note: previous declaration of 'mkstemp' was here
+ __cdecl __MINGW_NOTHROW  int mkstemp (char *);
+                              ^~~~~~~
+c:\mingw\include\stdlib.h:823:32: error: nested function 'mkdtemp' declared 'extern'
+ __cdecl __MINGW_NOTHROW  char *mkdtemp (char *__dirname_template)
+                                ^~~~~~~
+c:\mingw\include\stdlib.h:823:32: error: static declaration of 'mkdtemp' follows non-static declaration
+c:\mingw\include\stdlib.h:819:32: note: previous declaration of 'mkdtemp' was here
+ __cdecl __MINGW_NOTHROW  char *mkdtemp (char *);
+                                ^~~~~~~
+c:\mingw\include\stdlib.h:837:30: error: nested function 'setenv' declared 'extern'
+ __cdecl __MINGW_NOTHROW  int setenv( const char *__n, const char *__v, int __f )
+                              ^~~~~~
+c:\mingw\include\stdlib.h:837:30: error: static declaration of 'setenv' follows non-static declaration
+c:\mingw\include\stdlib.h:831:30: note: previous declaration of 'setenv' was here
+ __cdecl __MINGW_NOTHROW  int setenv( const char *, const char *, int );
+                              ^~~~~~
+c:\mingw\include\stdlib.h:841:30: error: nested function 'unsetenv' declared 'extern'
+ __cdecl __MINGW_NOTHROW  int unsetenv( const char *__name )
+                              ^~~~~~~~
+c:\mingw\include\stdlib.h:841:30: error: static declaration of 'unsetenv' follows non-static declaration
+c:\mingw\include\stdlib.h:832:30: note: previous declaration of 'unsetenv' was here
+ __cdecl __MINGW_NOTHROW  int unsetenv( const char * );
+                              ^~~~~~~~
+..\src\Clase 18- Puntero a estructuras.c:17:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:17:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:17:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:23:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:23:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:23:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:29:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:29:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:29:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:30:5: warning: 'main' is normally a non-static function [-Wmain]
+ int main()
+     ^~~~
+..\src\Clase 18- Puntero a estructuras.c: In function 'main':
+..\src\Clase 18- Puntero a estructuras.c:37:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:37:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:37:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:39:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:39:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:39:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:41:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:41:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:41:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:43:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:43:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:43:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:46:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:46:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:46:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:50:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:50:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:50:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:52:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:52:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:52:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:55:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:55:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:55:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:58:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:58:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:58:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:61:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:61:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:61:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:63:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:63:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:63:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:64:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:64:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:64:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:66:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:66:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:66:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:69:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:69:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:69:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:73:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:73:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:73:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:75:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:75:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:75:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:78:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:78:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:78:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:81:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:81:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:81:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:84:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:84:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:84:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:86:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:86:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:86:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:87:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:87:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:87:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:89:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:89:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:89:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:92:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:92:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:92:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:96:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:96:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:96:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:98:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:98:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:98:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:101:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:101:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:101:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:104:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:104:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:104:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:107:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:107:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:107:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:109:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:109:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:109:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:112:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:112:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:112:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:116:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:116:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:116:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:121:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:121:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:121:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:123:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:123:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:123:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:126:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:126:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:126:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:129:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:129:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:129:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:133:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:133:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:133:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:136:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:136:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:136:3: error: stray '\213' in program
+ ​
+   ^
+..\src\Clase 18- Puntero a estructuras.c:139:1: error: stray '\342' in program
+ ​
+ ^
+..\src\Clase 18- Puntero a estructuras.c:139:2: error: stray '\200' in program
+ ​
+  ^
+..\src\Clase 18- Puntero a estructuras.c:139:3: error: stray '\213' in program
+ ​
+   ^
+At top level:
+..\src\Clase 18- Puntero a estructuras.c:30:5: warning: 'main' defined but not used [-Wunused-function]
+ int main()
+     ^~~~
+
+19:38:10 Build Failed. 141 errors, 2 warnings. (took 468ms)
+

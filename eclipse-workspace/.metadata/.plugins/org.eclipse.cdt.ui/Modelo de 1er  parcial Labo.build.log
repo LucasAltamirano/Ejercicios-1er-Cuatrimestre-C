@@ -1,0 +1,39 @@
+20:17:37 **** Incremental Build of configuration Debug for project Modelo de 1er  parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Modelo de 1er  parcial Labo.o" "..\\src\\Modelo de 1er  parcial Labo.c" 
+..\src\Modelo de 1er  parcial Labo.c:15:18: error: unknown type name 'datosAlumnos'
+ int cargarStruct(datosAlumnos estructurasRecibidas[],int espacioLibre);
+                  ^~~~~~~~~~~~
+..\src\Modelo de 1er  parcial Labo.c: In function 'main':
+..\src\Modelo de 1er  parcial Labo.c:58:3: error: 'esNumero' undeclared (first use in this function)
+   esNumero=scanf("%d",&opcionMenu);
+   ^~~~~~~~
+..\src\Modelo de 1er  parcial Labo.c:58:3: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Modelo de 1er  parcial Labo.c:58:24: error: 'opcionMenu' undeclared (first use in this function)
+   esNumero=scanf("%d",&opcionMenu);
+                        ^~~~~~~~~~
+..\src\Modelo de 1er  parcial Labo.c:68:5: error: 'posLibre' undeclared (first use in this function)
+     posLibre=buscarVacio(alumnos,CANTIDAD);
+     ^~~~~~~~
+..\src\Modelo de 1er  parcial Labo.c:68:14: warning: implicit declaration of function 'buscarVacio' [-Wimplicit-function-declaration]
+     posLibre=buscarVacio(alumnos,CANTIDAD);
+              ^~~~~~~~~~~
+..\src\Modelo de 1er  parcial Labo.c:68:26: error: 'alumnos' undeclared (first use in this function)
+     posLibre=buscarVacio(alumnos,CANTIDAD);
+                          ^~~~~~~
+..\src\Modelo de 1er  parcial Labo.c:68:34: error: 'CANTIDAD' undeclared (first use in this function)
+     posLibre=buscarVacio(alumnos,CANTIDAD);
+                                  ^~~~~~~~
+..\src\Modelo de 1er  parcial Labo.c:70:6: warning: implicit declaration of function 'cargarStruct' [-Wimplicit-function-declaration]
+      cargarStruct(alumnos, posLibre);
+      ^~~~~~~~~~~~
+..\src\Modelo de 1er  parcial Labo.c:71:31: error: 'AsignacionLegajo' undeclared (first use in this function)
+      alumnos[posLibre].legajo=AsignacionLegajo;
+                               ^~~~~~~~~~~~~~~~
+..\src\Modelo de 1er  parcial Labo.c: At top level:
+..\src\Modelo de 1er  parcial Labo.c:110:18: error: unknown type name 'datosAlumnos'
+ int cargarStruct(datosAlumnos estructurasRecibidas[],int espacioLibre){
+                  ^~~~~~~~~~~~
+
+20:17:38 Build Failed. 8 errors, 2 warnings. (took 559ms)
+

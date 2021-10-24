@@ -1,0 +1,6 @@
+12:44:15 **** Incremental Build of configuration Debug for project Clase 2 -ejercicio delete 2- ****
+Info: Internal Builder is used for build
+gcc -o "Clase 2 -ejercicio delete 2-.exe" "src\\Clase 2 -ejercicio 2-.o" 
+
+12:44:15 Build Finished. 0 errors, 0 warnings. (took 420ms)
+

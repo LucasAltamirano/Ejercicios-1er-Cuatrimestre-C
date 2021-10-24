@@ -1,0 +1,163 @@
+/*
+ ===========================================================================
+ Lucas Altamirano division E
+ Ejercicio 3:
+ Realizar el algoritmo que permita ingresar los datos de los alumnos de una
+ división de la UTN FRA, los datos solicitados son:
+ Legajo
+ Tipo cursada(L: &quot;libre&quot; - P: &quot;presencial&quot; – R: &quot;remota&quot;)
+ Cantidad de materias( mas de cero y menos de 8)
+ Sexo (F: “femenino” – M: “masculino” , O: “no binario”)
+ Nota promedio (entre 0 y 10)
+ Edad (validar)
+ Se debe informar de existir, o informar que no existe , en el caso que
+ corresponda.
+ a) El Legajo del mejor promedio que femenino.
+ b) El legajo del más joven de los alumnos masculinos entre los que dan libre.
+ c) El promedio de nota por sexo.
+ d) La edad y legajo del que cursa más materias. (Sin importar su género)
+ ============================================================================
+ */
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	char continuar;
+	int legajoIngresado;
+	char tipoCursada;
+	int cantidadMaterias;
+	char sexoIngresado;
+	float notaPromedio;
+	int edadIngresada;
+	int contadorPromedioM;
+	int contadorPromedioO;
+	int contadorPromedioF;
+	float sumadorPromedioM;
+	float sumadorPromedioO;
+	float sumadorPromedioF;
+	float promedioFinalF;
+	float promedioFinalM;
+	float promedioFinalO;
+
+	continuar = 's';
+	contadorPromedioM = 0;
+	contadorPromedioO = 0;
+	contadorPromedioF = 0;
+
+	setbuf(stdout, NULL);
+
+	while (continuar == 's') {
+
+		//Legajo
+		printf(" ingrese su numero de legajo ");
+		scanf(" %d", &legajoIngresado);
+		fflush( stdout);
+
+		while (legajoIngresado < 1 || legajoIngresado > 50000000) {
+
+			printf(" ERROR ingrese su numero de legajo ");
+			fflush( stdout);
+			scanf(" %d", &legajoIngresado);
+		}
+
+		//tipo cursada Tipo cursada(L: &quot;libre&quot; - P: &quot;presencial&quot; – R: &quot;remota&quot;)
+
+		printf(
+				" ingrese su Tipo cursada(L:;libre; - P: ;presencial; – R: ;remota ");
+		scanf(" %c", &tipoCursada);
+		while (tipoCursada != 'L' && tipoCursada != 'P' && tipoCursada != 'R') {
+
+			printf(
+					" ERROR ingrese su Tipo cursada(L:;libre; - P: ;presencial; – R: ;remota ");
+			scanf(" %c", &tipoCursada);
+		}
+		//Cantidad de materias( mas de cero y menos de 8)
+
+		printf("Ingrese la cantidad de materias 1-7 inclusive ");
+		scanf(" %d", &cantidadMaterias);
+		while (cantidadMaterias < 1 || cantidadMaterias > 7) {
+
+			printf(
+					" ERROR ingrese cantidad de materias valida 1- 7 inclusive  ");
+			scanf(" %d", &cantidadMaterias);
+		}
+		// Sexo (F: “femenino” – M: “masculino” , O: “no binario”)
+		printf("Ingrese su sexo   F: femenino – M: masculino, O: no binario ");
+		scanf(" %c", &sexoIngresado);
+		while (sexoIngresado != 'F' && sexoIngresado != 'M'
+				&& sexoIngresado != 'O') {
+
+			printf(
+					" ERROR Ingrese su sexo   F: femenino – M: masculino, O: no binario");
+			scanf(" %c", &sexoIngresado);
+		}
+
+		// Nota promedio (entre 0 y 10)
+
+		printf("Ingrese su nota promedio de 0 a 10 inclusive  ");
+		scanf(" %f", &notaPromedio);
+
+		while (notaPromedio < 0 || notaPromedio > 10) {
+			printf(" ERROR Ingrese su nota promedio de 0 a 10 inclusive ");
+			scanf(" %d", &notaPromedio);
+
+		}
+
+		//edad validada
+
+		printf("Ingrese su edad");
+		scanf("%d", &edadIngresada);
+		while (edadIngresada < 18 || edadIngresada > 90) {
+			printf(" ERROR Ingrese su edad ");
+			scanf(" %d", &edadIngresada);
+
+		}
+		switch (sexoIngresado) {
+		case ('F'):
+
+			contadorPromedioF++;
+			sumadorPromedioF = sumadorPromedioF + notaPromedio;
+
+			break;
+		case ('M'):
+			contadorPromedioM++;
+			sumadorPromedioM = sumadorPromedioM + notaPromedio;
+
+			break;
+		case ('O'):
+			contadorPromedioO++;
+			sumadorPromedioO = sumadorPromedioO + notaPromedio;
+
+			break;
+
+		} // fin de switch
+
+		printf("desea agregar  otro alumno?");
+		scanf(" %c",&continuar);
+
+	} //fin del while
+
+	if(contadorPromedioF>0){
+		promedioFinalF=sumadorPromedioF/contadorPromedioF;
+		printf("la nota promedio para el sexo femenino es %2.f",promedioFinalF);
+
+	}else {
+		printf("\nno se registraron datos para el promedio femenino ");
+	}
+	if(contadorPromedioM>0){
+			promedioFinalM=sumadorPromedioM/contadorPromedioM;
+			printf("\nla nota promedio para el sexo masculino es %2.f",promedioFinalM);
+
+		}else {
+			printf("\nno se registraron datos para el promedio masculino ");
+		}
+	if(contadorPromedioO>0){
+			promedioFinalO=sumadorPromedioO/contadorPromedioO;
+			printf("\nla nota promedio para el sexo binario es %2.f",promedioFinalO);
+
+		}else {
+			printf("\nno se registraron datos para el promedio binario");
+		}
+	return EXIT_SUCCESS;
+} ///fin funcion

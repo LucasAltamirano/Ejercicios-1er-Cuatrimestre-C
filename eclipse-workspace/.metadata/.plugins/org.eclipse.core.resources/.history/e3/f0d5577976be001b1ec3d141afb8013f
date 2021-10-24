@@ -1,0 +1,68 @@
+/*
+ ============================================================================
+ Name        : Clase.c
+ Author      : Lucas Altamirano
+   Punteros a estruucturas
+ ============================================================================
+ */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+/*
+
+
+ *//*1-Utilizar aritmética de punteros. Realizar una función que reciba un puntero a char y dos char.
+La función deberá reemplazar en la cadena cada ocurrencia del primer carácter recibido, por el segundo.
+Retornando la cantidad de reemplazos o -1 en caso de error. */
+
+/*
+int funcionPunteroChar(char* puntero,char uno,char dos);
+int main(void)
+{
+	setbuf(stdout,NULL);
+
+	char puntero[20];
+
+	funcionPunteroChar(puntero,'a','b');
+
+	return EXIT_SUCCESS;
+}
+
+int funcionPunteroChar(char* puntero,char uno,char dos)
+{
+	int i;
+	int contadorReemplazos=0;
+
+	for(i=0;i<(strlen(puntero));i++)
+	{
+		if(*(puntero+i)==uno)
+		{
+			*(puntero+i)=dos;
+			contadorReemplazos++;
+		}
+	}
+	if(contadorReemplazos==0)
+	{
+		contadorReemplazos=-1;
+	}
+	return contadorReemplazos;
+}
+/*
+/*2-Utilizar aritmética de punteros. Realizar una función que reciba como parámetros un array de enteros
+y un entero por referencia. La función calculará el valor máximo de ese array y utilizará el valor por
+referencia para retornar ese valor.*/
+
+
+int main(void)
+{
+	setbuf(stdout,NULL);
+
+	int enteros[]=[1,2,3,4,5];
+
+	funcionPunteroChar(puntero,'a','b');
+
+	return EXIT_SUCCESS;
+}
+

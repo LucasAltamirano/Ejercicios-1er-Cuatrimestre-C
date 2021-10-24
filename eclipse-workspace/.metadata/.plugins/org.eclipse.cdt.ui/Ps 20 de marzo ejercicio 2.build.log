@@ -1,0 +1,7 @@
+16:16:42 **** Incremental Build of configuration Debug for project Ps 20 de marzo ejercicio 2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ps 20 de marzo ejercicio 2.o" "..\\src\\Ps 20 de marzo ejercicio 2.c" 
+gcc -o "Ps 20 de marzo ejercicio 2.exe" "src\\Ps 20 de marzo ejercicio 2.o" 
+
+16:16:44 Build Finished. 0 errors, 0 warnings. (took 2s.177ms)
+

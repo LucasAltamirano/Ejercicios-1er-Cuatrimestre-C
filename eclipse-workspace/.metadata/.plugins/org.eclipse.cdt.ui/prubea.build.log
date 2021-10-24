@@ -1,0 +1,29 @@
+19:25:14 **** Incremental Build of configuration Debug for project prubea ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\prubea.o" "..\\src\\prubea.c" 
+..\src\prubea.c: In function 'main':
+..\src\prubea.c:15:21: error: stray '\223' in program
+  char nombre[20] = {“PEDRO”};
+                     ^
+..\src\prubea.c:15:27: error: stray '\224' in program
+  char nombre[20] = {“PEDRO”};
+                           ^
+..\src\prubea.c:15:22: error: 'PEDRO' undeclared (first use in this function)
+  char nombre[20] = {“PEDRO”};
+                      ^~~~~
+..\src\prubea.c:15:22: note: each undeclared identifier is reported only once for each function it appears in
+..\src\prubea.c:18:14: warning: implicit declaration of function 'tolower' [-Wimplicit-function-declaration]
+  convertido =tolower(nombre[0]);
+              ^~~~~~~
+..\src\prubea.c:19:13: error: expected ')' before ';' token
+  printf("%s";convertido);
+             ^
+..\src\prubea.c:19:11: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+  printf("%s";convertido);
+           ^
+..\src\prubea.c:16:7: warning: variable 'convertido' set but not used [-Wunused-but-set-variable]
+  char convertido;
+       ^~~~~~~~~~
+
+19:25:15 Build Failed. 4 errors, 3 warnings. (took 382ms)
+

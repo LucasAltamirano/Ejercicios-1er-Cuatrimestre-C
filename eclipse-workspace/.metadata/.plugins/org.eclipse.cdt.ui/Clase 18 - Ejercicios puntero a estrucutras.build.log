@@ -1,0 +1,7 @@
+18:10:03 **** Rebuild of configuration Debug for project Clase 18 - Ejercicios puntero a estrucutras ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 18 - Ejercicios puntero a estrucutras.o" "..\\src\\Clase 18 - Ejercicios puntero a estrucutras.c" 
+gcc -o "Clase 18 - Ejercicios puntero a estrucutras.exe" "src\\Clase 18 - Ejercicios puntero a estrucutras.o" 
+
+18:10:07 Build Finished. 0 errors, 0 warnings. (took 3s.445ms)
+

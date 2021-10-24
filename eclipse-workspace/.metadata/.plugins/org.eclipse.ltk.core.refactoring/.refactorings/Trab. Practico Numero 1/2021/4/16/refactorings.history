@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Trab. Practico Numero 1/src/UTN-CALCULOS&apos; to &apos;UTN-CALCULOS.H&apos;" description="Rename resource &apos;UTN-CALCULOS&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/UTN-CALCULOS" name="UTN-CALCULOS.H" stamp="1618544958001" updateReferences="true"/>
+</session>

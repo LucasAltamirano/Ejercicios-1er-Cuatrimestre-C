@@ -1,0 +1,7 @@
+19:00:07 **** Incremental Build of configuration Debug for project proyecto Pre parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\proyecto Pre parcial.o" "..\\src\\proyecto Pre parcial.c" 
+gcc -o "proyecto Pre parcial.exe" "src\\proyecto Pre parcial.o" 
+
+19:00:08 Build Finished. 0 errors, 0 warnings. (took 847ms)
+

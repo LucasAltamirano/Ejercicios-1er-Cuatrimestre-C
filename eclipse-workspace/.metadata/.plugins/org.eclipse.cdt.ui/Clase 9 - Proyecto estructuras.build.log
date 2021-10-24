@@ -1,0 +1,45 @@
+18:40:39 **** Rebuild of configuration Debug for project Clase 9 - Proyecto estructuras ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Lucas\\Desktop\\Entorno Eclipse\\eclipse-workspace\\Funciones" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 9 - Proyecto estructuras.o" "..\\src\\Clase 9 - Proyecto estructuras.c" 
+In file included from ..\src\Clase 9 - Proyecto estructuras.c:28:0:
+C:\Users\Lucas\Desktop\Entorno Eclipse\eclipse-workspace\Funciones/Genericas.h:23:25: error: array type has incomplete element type 'struct estructurasRecibidas'
+ int cargarStruct(struct estructurasRecibidas[],int espacioLibre);
+                         ^~~~~~~~~~~~~~~~~~~~
+C:\Users\Lucas\Desktop\Entorno Eclipse\eclipse-workspace\Funciones/Genericas.h:23:25: warning: 'struct estructurasRecibidas' declared inside parameter list will not be visible outside of this definition or declaration
+..\src\Clase 9 - Proyecto estructuras.c:46:5: error: conflicting types for 'inicializarStruct'
+ int inicializarStruct(datosAlumnos estructurasRecibidas[],int limiteStruct);
+     ^~~~~~~~~~~~~~~~~
+In file included from ..\src\Clase 9 - Proyecto estructuras.c:28:0:
+C:\Users\Lucas\Desktop\Entorno Eclipse\eclipse-workspace\Funciones/Genericas.h:16:5: note: previous declaration of 'inicializarStruct' was here
+ int inicializarStruct(int estructurasRecibidas[],int limiteStruct);
+     ^~~~~~~~~~~~~~~~~
+..\src\Clase 9 - Proyecto estructuras.c:47:5: error: conflicting types for 'buscarVacio'
+ int buscarVacio(datosAlumnos estructurasRecibidas[],int limiteStruct );
+     ^~~~~~~~~~~
+In file included from ..\src\Clase 9 - Proyecto estructuras.c:28:0:
+C:\Users\Lucas\Desktop\Entorno Eclipse\eclipse-workspace\Funciones/Genericas.h:24:5: note: previous declaration of 'buscarVacio' was here
+ int buscarVacio(int estructurasRecibidas[],int limiteStruct );
+     ^~~~~~~~~~~
+..\src\Clase 9 - Proyecto estructuras.c:137:5: error: conflicting types for 'inicializarStruct'
+ int inicializarStruct(datosAlumnos estructurasRecibidas[],int limiteStruct){
+     ^~~~~~~~~~~~~~~~~
+In file included from ..\src\Clase 9 - Proyecto estructuras.c:28:0:
+C:\Users\Lucas\Desktop\Entorno Eclipse\eclipse-workspace\Funciones/Genericas.h:16:5: note: previous declaration of 'inicializarStruct' was here
+ int inicializarStruct(int estructurasRecibidas[],int limiteStruct);
+     ^~~~~~~~~~~~~~~~~
+..\src\Clase 9 - Proyecto estructuras.c:150:5: error: conflicting types for 'buscarVacio'
+ int buscarVacio(datosAlumnos estructurasRecibidas[],int limiteStruct ){
+     ^~~~~~~~~~~
+In file included from ..\src\Clase 9 - Proyecto estructuras.c:28:0:
+C:\Users\Lucas\Desktop\Entorno Eclipse\eclipse-workspace\Funciones/Genericas.h:24:5: note: previous declaration of 'buscarVacio' was here
+ int buscarVacio(int estructurasRecibidas[],int limiteStruct );
+     ^~~~~~~~~~~
+..\src\Clase 9 - Proyecto estructuras.c:337:6: error: redefinition of 'PromedioAlumno'
+ void PromedioAlumno(datosAlumnos estructurasRecibidas[],int espacioLibre){
+      ^~~~~~~~~~~~~~
+..\src\Clase 9 - Proyecto estructuras.c:229:6: note: previous definition of 'PromedioAlumno' was here
+ void PromedioAlumno(datosAlumnos estructurasRecibidas[],int espacioLibre){
+      ^~~~~~~~~~~~~~
+
+18:40:40 Build Failed. 6 errors, 1 warnings. (took 401ms)
+

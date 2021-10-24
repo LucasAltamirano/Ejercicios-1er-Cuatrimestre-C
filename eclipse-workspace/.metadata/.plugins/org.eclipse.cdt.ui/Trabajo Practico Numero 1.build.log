@@ -1,0 +1,19 @@
+19:07:19 **** Incremental Build of configuration Debug for project Trabajo Practico Numero 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Trabajo Practico Numero 1.o" "..\\src\\Trabajo Practico Numero 1.c" 
+..\src\Trabajo Practico Numero 1.c: In function 'main':
+..\src\Trabajo Practico Numero 1.c:56:2: error: expected ';' before 'return'
+  return EXIT_SUCCESS;
+  ^~~~~~
+..\src\Trabajo Practico Numero 1.c:48:8: warning: unused variable 'r' [-Wunused-variable]
+  float r;
+        ^
+..\src\Trabajo Practico Numero 1.c:47:6: warning: unused variable 'y' [-Wunused-variable]
+  int y;
+      ^
+..\src\Trabajo Practico Numero 1.c:46:6: warning: unused variable 'x' [-Wunused-variable]
+  int x;
+      ^
+
+19:07:19 Build Failed. 1 errors, 3 warnings. (took 245ms)
+

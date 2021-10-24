@@ -1,0 +1,96 @@
+/*
+ ===========================================================================
+ Lucas Altamirano division E
+ Ejercicio 3:
+ Realizar el algoritmo que permita ingresar los datos de los alumnos de una
+ división de la UTN FRA, los datos solicitados son:
+ Legajo
+ Tipo cursada(L: &quot;libre&quot; - P: &quot;presencial&quot; – R: &quot;remota&quot;)
+ Cantidad de materias( mas de cero y menos de 8)
+ Sexo (F: “femenino” – M: “masculino” , O: “no binario”)
+ Nota promedio (entre 0 y 10)
+ Edad (validar)
+ Se debe informar de existir, o informar que no existe , en el caso que
+ corresponda.
+ a) El Legajo del mejor promedio que femenino.
+ b) El legajo del más joven de los alumnos masculinos entre los que dan libre.
+ c) El promedio de nota por sexo.
+ d) La edad y legajo del que cursa más materias. (Sin importar su género)
+ ============================================================================
+ */
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	int legajoIngresado;
+	char tipoCursada;
+	int cantidadMaterias;
+	char sexoIngresado;
+	int notaPromedio;
+	int edadIngresada;
+
+	setbuf(stdout, NULL);
+
+	//Legajo
+	printf(" ingrese su numero de legajo ");
+	scanf(" %d", &legajoIngresado);
+	fflush( stdout);
+
+	while (legajoIngresado < 1 || legajoIngresado > 50000000) {
+
+		printf(" ERROR ingrese su numero de legajo ");
+		fflush( stdout);
+		scanf(" %d", &legajoIngresado);
+	}
+
+	//tipo cursada Tipo cursada(L: &quot;libre&quot; - P: &quot;presencial&quot; – R: &quot;remota&quot;)
+
+	printf(
+			" ingrese su Tipo cursada(L:;libre; - P: ;presencial; – R: ;remota ");
+	scanf(" %c", &tipoCursada);
+	while (tipoCursada != 'L' && tipoCursada != 'P' && tipoCursada != 'R') {
+
+		printf(
+				" ERROR ingrese su Tipo cursada(L:;libre; - P: ;presencial; – R: ;remota ");
+		scanf(" %c", &tipoCursada);
+	}
+	//Cantidad de materias( mas de cero y menos de 8)
+
+	printf("Ingrese la cantidad de materias 1-7 inclusive ");
+	scanf(" %d", &cantidadMaterias);
+	while (cantidadMaterias < 1 || cantidadMaterias > 7) {
+
+		printf(" ERROR ingrese cantidad de materias valida 1- 7 inclusive  ");
+		scanf(" %d", &cantidadMaterias);
+	}
+	// Sexo (F: “femenino” – M: “masculino” , O: “no binario”)
+	printf("Ingrese su sexo   F: femenino – M: masculino, O: no binario ");
+	scanf(" %c", &sexoIngresado);
+	while (sexoIngresado != 'F' && sexoIngresado != 'M' && sexoIngresado != 'O') {
+
+		printf(
+				" ERROR Ingrese su sexo   F: femenino – M: masculino, O: no binario");
+		scanf(" %c", &sexoIngresado);
+
+	// Nota promedio (entre 0 y 10)
+
+		printf("Ingrese su nota promedio de 0 a 10 inclusive  ");
+		scanf(" %d",&notaPromedio);
+
+		while (notaPromedio < 0 || notaPromedio >10 )  {
+			printf(" ERROR Ingrese su nota promedio de 0 a 10 inclusive ");
+					scanf(" %d", &notaPromedio);
+
+
+
+
+		}
+
+
+
+
+
+		return EXIT_SUCCESS;
+	} //fin funcion

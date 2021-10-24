@@ -1,0 +1,7 @@
+23:23:25 **** Incremental Build of configuration Debug for project Clase 8 Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8 Arrays.o" "..\\src\\Clase 8 Arrays.c" 
+gcc -o "Clase 8 Arrays.exe" "src\\Clase 8 Arrays.o" 
+
+23:23:25 Build Finished. 0 errors, 0 warnings. (took 740ms)
+

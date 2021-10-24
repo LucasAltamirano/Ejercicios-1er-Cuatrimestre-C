@@ -1,0 +1,35 @@
+/*
+ ============================================================================
+ Name        : Clase.c
+ Author      : Lucas Altamirano
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	setbuf(stdout,NULL);
+
+	char loguinUser[16];
+
+
+	printf("Debe loguearse , para empezar a operar");
+	printf("\nIngrese un nombre de Usuario(maximo 10 caracteres");
+	scanf("%c",loguinUser);
+
+
+
+
+
+
+
+
+
+
+	return EXIT_SUCCESS;
+}

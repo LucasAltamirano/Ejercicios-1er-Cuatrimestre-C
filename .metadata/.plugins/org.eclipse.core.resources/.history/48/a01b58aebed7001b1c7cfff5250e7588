@@ -1,0 +1,22 @@
+/*
+ ============================================================================
+ Name        : 8-.c
+ Author      : Lucas Altamirano
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void) {
+	char [30]="SIGLO XXI EDITORES";
+	int resultado;
+
+	resultado=strlen(SIGLO XXI EDITORES);
+		printf("\nCantidad de caracteres de palabra: %d ",resultado);
+	return EXIT_SUCCESS;
+}
